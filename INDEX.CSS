@@ -1,0 +1,100 @@
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.fondo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100vh;
+
+}
+
+.punzonadora{
+    background-image: url(https://th.bing.com/th/id/OIP.iL93qDNIgLrNJXJwMmxR4wHaHZ?rs=1&pid=ImgDetMain);
+    background-position-x:-40px ;
+    background-position-y:100px ;
+    background-size:40cqmax;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 60px;
+    transition: all 0.3s;
+}
+
+.punzonadora p{
+    margin-top: 50%;
+    border-radius: 15px;
+    background-color: papayawhip;
+    display: inline-block;
+    padding: 15px;
+    
+
+}
+
+.punzonadora:hover{
+    opacity: 1;
+    font-size: 65px;
+}
+
+
+.dobladora{
+    background-image: url(https://swematec.se/____impro/1/onewebmedia/B%20Series%20-%20Main%20Picture_.png?etag=%223155c3-602e7ea5%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=1264%2B948);
+    background-position-x:-40px ;
+    background-position-y:100px ;
+    background-size:40cqmax;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 60px;
+    transition: all 0.3s;
+}
+
+.dobladora p{
+    margin-top: 50%;
+    border-radius: 15px;
+    background-color: papayawhip;
+    display: inline-block;
+    padding: 15px;
+    
+
+}
+
+.dobladora:hover{
+    opacity: 1;
+    font-size: 65px;
+}
+
+
+.CNC{
+    background-image: url(https://th.bing.com/th/id/R.5dc3a6205df901805c0f9bc3f69bf78d?rik=kKC3Vrfx3HF%2fIg&pid=ImgRaw&r=0);
+    background-position-x:-40px ;
+    background-position-y:100px ;
+    background-size:40cqmax;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 60px;
+    transition: all 0.3s;
+}
+
+.CNC p{
+    margin-top: 50%;
+    border-radius: 15px;
+    background-color: papayawhip;
+    display: inline-block;
+    padding: 15px;
+    
+
+}
+
+.CNC:hover{
+    opacity: 1;
+    font-size: 65px;
+}
