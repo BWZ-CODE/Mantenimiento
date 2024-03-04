@@ -1,3 +1,13 @@
+:root{
+    --negro:#212529;
+    --gris:#343a40; 
+    --grisClaro:#6c757d;
+    --blanco:#dee2e6;
+}
+
+
+
+
 body{
     width: 100%;
     margin: 0 auto;

@@ -1,0 +1,120 @@
+
+
+.contInfoElec{
+    position: relative;
+  }
+  
+  .informacionElec{
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 40px 180px 80px;
+  max-width: 600px;
+  min-width: 400px;
+  height: 300px;
+  background-color: var(--blanco);
+  z-index: 10;
+  /* top: -800px;
+  left: 25%; */
+  border-radius: 20px;
+  top: -120vh;
+  left: 0;
+  right: 0;bottom: 0;
+  margin: auto;
+  }
+  
+  .imgElec{
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-left: 15px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start:2 ;
+  grid-row-end: 4;
+  width: 250px;
+  position: absolute;
+  left: 25px;
+  }
+  
+  .ElecInfo{
+  margin-left: 20px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start:2 ;
+  grid-row-end: 4;
+  }
+  
+  .ElecInfo p{
+    font-size: 20px;
+    margin-top: 25px;
+    
+  }
+  
+  .motorInfo a{
+    color: black;
+  }
+  
+  .flechita1, .flechita2{
+    cursor: pointer;
+    Elecition: all 0.5s;
+  }
+  
+  .flechita2:hover,.flechita1:hover{
+    
+    margin-left: 10px;
+    
+  }
+  
+  
+  .close,.close1{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start:1 ;
+  grid-row-end: 2;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  }
+  
+  .inactive{
+  display:none;
+  }
+  
+  .Elec1,.Elec2,.Elec3,.Elec4{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .infoCig1,.infoCig2,.infoCig3,.infoCig4{
+  position: absolute;
+  max-width: 150px;
+  min-width: 100px;
+  height: 40px;
+  background-color: var(--blanco);
+  z-index: 11;
+  /* top: -800px;
+  left: 25%; */
+  border-radius: 20px;
+  top: -136vh;
+  left:780px;
+  right: 0;bottom: 0;
+  margin: auto;
+  }
+  
+  .infoCig2{
+    top:-125vh;
+  }
+  .infoCig3{
+    top: -114vh;
+  }
+  
+  .infoCig4{
+    top:-103vh;
+  }
+  
+  .info1{
+    text-align: center;
+  }
+  
+  
