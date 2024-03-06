@@ -76,14 +76,6 @@ nav{
 
 
 
-body{
-    margin: 0;
-    width: 100%;
-    height: auto;
-}
-
-
-
 .container{
     display: grid;
     background-image: url(./img/fondo.jpg);
