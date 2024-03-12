@@ -74,34 +74,169 @@ nav{
 
 .contenedor{
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows:repeat(9,10vh);
+    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    height: 94vh;
+    gap: 20px;
+    justify-content: center;
 }
 
 
 .punzonadora{
     display: grid;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end:8;
-    justify-content: center;
-    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
     max-width: 400px;
     min-width: 300px;
+    max-height:370px;
+    min-height: 100px;
     border: 1px solid black;
     border-radius: 15px;
     position: relative;
-    background-color: aliceblue;
+    background-color: #FFF;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-.punzonadora h2{
-    text-align: center;
+    overflow: hidden;
+    
+    
 }
 
 .punzonadora img{
+    width: 100%;
+    
+}
+
+
+.punzonadora h2{
     display: grid;
-    max-width: 280px;
-    min-width: 100px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    margin: 0;
+    transition: all 0.5s;
+    align-items: center;
+   
+}
+
+
+.punzonadora h2:hover{
+    transform: scale(1.5);
+}
+
+.dobladora{
+  display: grid;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  
+  max-width: 400px;
+  min-width: 300px;
+  max-height:400px;
+  min-height: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  position: relative;
+  background-color: #FFF;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  overflow: hidden;
+    
+  }
+  
+  .dobladora img{
+    width: 100%;
+    
+  }
+  
+  
+  .dobladora h2{
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    margin: 0;
+    transition: all 0.5s;
+    align-items: center;
+   
+  }
+  
+  
+  .dobladora h2:hover{
+    transform: scale(1.5);
+  }
+  
+  
+  @media screen and (max-width: 1366px) {
+  
+  .contenedor{
+    height: 85vh;
+  }
+
+
+  .dobladora h2{
+    margin-top: 15px;
+  }
+  
+  .cnc h2{
+    margin-top: 15px;
+  }
+
+  .punzonadora h2{
+    margin-top: 15px;
+}
+ 
+.punzonadora,.dobladora,.cnc{
+    margin-left: 10px;
+}
+
+
+    
+  /* .dobladora{
+    grid-row-start: 4;
+    grid-row-end:9;
+  } */
+  
+  }
+
+  
+.cnc{
+    display: grid;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    
+    max-width: 400px;
+    min-width: 300px;
+    max-height:400px;
+    min-height: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: relative;
+    background-color: #FFF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    overflow: hidden;
+    
+  }
+  
+  .cnc img{
+    width: 100%;
+    
+  }
+  
+  
+  .cnc h2{
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    margin: 0;
+    transition: all 0.5s;
+    align-items: center;
+   
+  }
+  
+  
+  .cnc h2:hover{
+    transform: scale(1.5);
+  }
+  
+
+.punzonadora,.dobladora,.cnc{
+    margin-left: 15%;
 }
