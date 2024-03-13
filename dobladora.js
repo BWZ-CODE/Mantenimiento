@@ -90,3 +90,27 @@ function cerrarInfoTope(){
     infSecTope.classList.add('inactive')
     fondo3.classList.toggle('opaco')
 }
+
+/////////////////////////////////////////
+
+const cerrar5 = document.querySelector('.close5');
+const btnArm = document.querySelector('.quinto')
+const infArm = document. querySelector('.contArmElec')
+const infSecArm = document.querySelector('.infoSec5')
+const fondo4 = document.querySelector('.container')
+
+
+btnArm.addEventListener('click', abirInfoArm);
+cerrar5.addEventListener('click', cerrarInfoArm);
+
+function abirInfoArm(){
+    infArm.classList.toggle('inactive')
+    infSecArm.classList.toggle('inactive')
+    fondo4.classList.add('opaco')
+}
+
+function cerrarInfoArm(){
+    infArm.classList.add('inactive')
+    infSecArm.classList.add('inactive')
+    fondo4.classList.toggle('opaco')
+}
