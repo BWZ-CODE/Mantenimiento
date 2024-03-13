@@ -1,123 +1,92 @@
-const closer = document.querySelector(".close");
-const motor = document.querySelector(".motor");
-const info = document.querySelector(".informacion");
+const cerrar = document.querySelector('.close1');
+const btnGrupo = document.querySelector('.primer')
+const infGrupo = document. querySelector('.contGrupoH')
+const infSecGrupo = document.querySelector('.infoSec1')
+const fondo = document.querySelector('.container')
 
-motor.addEventListener('click', activarInfo);
-closer.addEventListener('click', cerrarInfo);
 
-function activarInfo(){
-    info.classList.toggle('inactive');
+btnGrupo.addEventListener('click', abirInfoGrupo);
+cerrar.addEventListener('click', cerrarInfoGrupo);
+
+function abirInfoGrupo(){
+    infGrupo.classList.toggle('inactive')
+    infSecGrupo.classList.toggle('inactive')
+    fondo.classList.add('opaco')
+}
+
+function cerrarInfoGrupo(){
+    infGrupo.classList.add('inactive')
+    infSecGrupo.classList.add('inactive')
+    fondo.classList.toggle('opaco')
+}
+///////////////////////////////////////////////
+
+const cerrar2 = document.querySelector('.close2');
+const btnCilin = document.querySelector('.segundo')
+const infCilin = document. querySelector('.contCilinSub')
+const infSecCilin = document.querySelector('.infoSec2')
+const fondo1 = document.querySelector('.container')
+
+
+btnCilin.addEventListener('click', abirInfoCilin);
+cerrar2.addEventListener('click', cerrarInfoCilin);
+
+function abirInfoCilin(){
+    infCilin.classList.toggle('inactive')
+    infSecCilin.classList.toggle('inactive')
+    fondo1.classList.add('opaco')
+}
+
+function cerrarInfoCilin(){
+    infCilin.classList.add('inactive')
+    infSecCilin.classList.add('inactive')
+    fondo1.classList.toggle('opaco')
 }
 
 /////////////////////////////////////
 
-const motorAcc = document.querySelector (".flechita1");
-const infoInter1 = document.querySelector (".infoInterna1")
+const cerrar3 = document.querySelector('.close3');
+const btnCilinP = document.querySelector('.tercero')
+const infCilinP = document. querySelector('.ContCilinPrinc')
+const infSecCilinP = document.querySelector('.infoSec3')
+const fondo2 = document.querySelector('.container')
 
 
-motorAcc.addEventListener('click', activarInfoInter1);
+btnCilinP.addEventListener('click', abirInfoCilinP);
+cerrar3.addEventListener('click', cerrarInfoCilinP);
 
-function activarInfoInter1(){
-    infoInter1.classList.toggle('inactive')
-}
-function cerrarInfo(){
-    infoInter1.classList.add('inactive')
-    info.classList.add('inactive')
-}
-
-/////////////////////////////////
-
-const polea = document.querySelector(".flechita2");
-const infoInter2 = document.querySelector(".infoInterna2");
-
-polea.addEventListener('click', activarInfonInter2)
-
-function activarInfonInter2(){
-    infoInter2.classList.toggle('inactive')
+function abirInfoCilinP(){
+    infCilinP.classList.toggle('inactive')
+    infSecCilinP.classList.toggle('inactive')
+    fondo2.classList.add('opaco')
 }
 
-function cerrarInfo(){
-    infoInter1.classList.add('inactive')
-    info.classList.add('inactive')
-    infoInter2.classList.add('inactive')
+function cerrarInfoCilinP(){
+    infCilinP.classList.add('inactive')
+    infSecCilinP.classList.add('inactive')
+    fondo2.classList.toggle('opaco')
 }
 
+////////////////////////////////////////
 
-//////////////////////////////////////////////////
+const cerrar4 = document.querySelector('.close4');
+const btnTope = document.querySelector('.cuarto')
+const inftope = document. querySelector('.contTope')
+const infSecTope = document.querySelector('.infoSec4')
+const fondo3 = document.querySelector('.container')
 
-const closer1 = document.querySelector(".close1");
-const trans = document.querySelector(".transmision");
-const infoTrans = document.querySelector(".informacionTrans");
-const correa = document.querySelector(".infoCig1");
-const conexion = document.querySelector(".infoCig2");
-const volante = document.querySelector(".infoCig3");
-const ciguenal = document.querySelector(".infoCig4");
 
-trans.addEventListener('click', activarTrans);
-closer1.addEventListener('click', cerrarTrans);
+btnTope.addEventListener('click', abirInfoTope);
+cerrar4.addEventListener('click', cerrarInfoTope);
 
-function activarTrans(){
-    infoTrans.classList.toggle('inactive');
-    correa.classList.toggle('inactive');
-    conexion.classList.toggle('inactive');
-    volante.classList.toggle('inactive');
-    ciguenal.classList.toggle('inactive');
+function abirInfoTope(){
+    inftope.classList.toggle('inactive')
+    infSecTope.classList.toggle('inactive')
+    fondo3.classList.add('opaco')
 }
 
-function cerrarTrans(){
-    infoTrans.classList.add('inactive');
-    correa.classList.add('inactive');
-    conexion.classList.add('inactive');
-    volante.classList.add('inactive');
-    ciguenal.classList.add('inactive');
-}
-
-///////////////////////////////////////////////////////////
-
-const closer2 = document.querySelector(".close2");
-const troquel = document.querySelector(".troquel");
-const infoTroquel = document.querySelector(".informacionTroquel");
-const infoTro1 = document.querySelector(".infotro1");
-const infoTro2 = document.querySelector(".infotro2");
-
-troquel.addEventListener('click', activarTroquel);
-closer2.addEventListener('click', cerrarTroquel);
-
-function activarTroquel(){
-    infoTroquel.classList.toggle('inactive');
-    infoTro1.classList.toggle('inactive');
-    infoTro2.classList.toggle('inactive');
-}
-
-function cerrarTroquel(){
-    infoTroquel.classList.add('inactive');
-    infoTro1.classList.add('inactive');
-    infoTro2.classList.add('inactive');
-}
-
-////////////////////////////////////////////////////////////
-
-const closer3 = document.querySelector(".close3");
-const sistE = document.querySelector(".sistE");
-const infoElec = document.querySelector(".informacionElec");
-const infoElec1 = document.querySelector(".infoElec1");
-const infoElec2 = document.querySelector(".infoElec2");
-const infoElec3 = document.querySelector(".infoElec3");
-
-sistE.addEventListener('click', activarSistE);
-closer3.addEventListener('click', cerrarSistE);
-
-function activarSistE(){
-    infoElec.classList.toggle('inactive');
-    infoElec1.classList.toggle('inactive');
-    infoElec2.classList.toggle('inactive');
-    infoElec3.classList.toggle('inactive');
-}
-
-
-function cerrarSistE(){
-    infoElec.classList.add('inactive');
-    infoElec1.classList.add('inactive');
-    infoElec2.classList.add('inactive');
-    infoElec3.classList.add('inactive');
+function cerrarInfoTope(){
+    inftope.classList.add('inactive')
+    infSecTope.classList.add('inactive')
+    fondo3.classList.toggle('opaco')
 }
