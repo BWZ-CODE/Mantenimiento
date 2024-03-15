@@ -17,7 +17,6 @@ body{
 a{
     text-decoration: none;
     color: black;
-    cursor: pointer;
 }
 
 nav{
@@ -73,4 +72,29 @@ nav{
     height: 24px;
 }
 
+.contenedor{
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/fondo.jpg);
+}
 
+table.tableizer-table {
+    margin: 15px;
+    font-size: 16px;
+    border: 1px solid #CCC; 
+    border-radius: 4px;
+    background-color: var(--blanco);
+    font-family: "Cormorant Garamond", serif;
+} 
+.tableizer-table td {
+    padding: 4px;
+    margin: 3px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+.tableizer-table th {
+    background-color: #104E8B; 
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 4px;
+}

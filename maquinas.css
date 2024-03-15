@@ -17,6 +17,7 @@ body{
 a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 nav{
@@ -79,6 +80,7 @@ nav{
     height: 94vh;
     gap: 20px;
     justify-content: center;
+    background-image: url(./img/fondo.jpg);
 }
 
 
@@ -163,10 +165,19 @@ nav{
   }
   
   
+.punzonadora,.dobladora,.cnc{
+  margin-left: 15%;
+}
+
+  
   @media screen and (max-width: 1366px) {
   
   .contenedor{
-    height: 85vh;
+    height: 89vh;
+  }
+
+  .punzonadora, .cnc, .dobladora{
+    margin:4%;
   }
 
 
@@ -176,14 +187,15 @@ nav{
   
   .cnc h2{
     margin-top: 15px;
+    
   }
 
   .punzonadora h2{
     margin-top: 15px;
 }
  
-.punzonadora,.dobladora,.cnc{
-    margin-left: 10px;
+.punzonadora img,.dobladora img,.cnc img{
+    margin: 0;
 }
 
 
@@ -236,7 +248,3 @@ nav{
     transform: scale(1.5);
   }
   
-
-.punzonadora,.dobladora,.cnc{
-    margin-left: 15%;
-}

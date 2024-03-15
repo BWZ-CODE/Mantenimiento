@@ -79,7 +79,7 @@
     display: grid;
     background-image: url(./img/fondo.jpg);
     background-size: cover;
-    grid-template-columns: repeat(5, minmax(200px,1fr));
+    grid-template-columns: repeat(6, minmax(200px,1fr));
     gap: 20px;
     grid-template-rows: 94vh;
     transition: all 0.5s;
@@ -123,7 +123,7 @@
   transform: translate(0%, 0%);
   width: 100%;
   height: 100%;
-  background: grey;
+  background: gray;
   border-radius: 10px;
 }
 
@@ -135,6 +135,7 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 50px;
+
 }
 
 .button-86:hover::before {
@@ -155,12 +156,12 @@
   transform: translate(0, 5%);
 }
 
-.grupoH,.cilindroSubida,.cilindroPrin,.Tope,.ArmarioElec{
+.motor,.capHusillo,.ejes,.sistATC,.sistRef,.sistLub{
     position: relative;
 
 }
 
-.primer,.segundo,.tercero,.cuarto,.quinto{
+.primer,.segundo,.tercero,.cuarto,.quinto,.sexto{
     position: absolute;
     top: 40%;
     bottom: 0;
@@ -170,19 +171,19 @@
 }
 
 .container a{
-  color: var(--negro);
-  font-size: 20px;
+    color: var(--negro);
+    font-size: 20px;
 }
 /* 
 ///////////////////////////////////////////////////////// */
 
-.contGrupoH{
+.contmotor{
   position: relative;
   
 }
 
 
-.grupoHi{
+.motori{
 position: absolute;
 display: grid;
 grid-template-columns: repeat(2,1fr);
@@ -201,7 +202,7 @@ right: 0;bottom: 0;
 margin: auto;
 }
 
-.imgGrupoH{
+.imgmotor{
   width: 300px;
   display: grid;
   grid-row-end:4 ;
@@ -210,7 +211,7 @@ margin: auto;
   padding: 15px;
   border-radius: 40px;
 }
-.grupoHInfo{
+.motorInfo{
   display: grid;
   grid-row-end:4 ;
   grid-row-start:2 ;
@@ -231,7 +232,7 @@ margin: auto;
   cursor: pointer;
 }
 
-.grupoH1,.grupoH2,.grupoH3,.grupoH4,.grupoH5{
+.motor1,.motor2,.motor3,.motor4,.motor5{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -252,7 +253,7 @@ margin: auto;
 
 .infoGrup2{
   position: absolute;
-  top: -72vh;
+  top: -71vh;
   left: 135vh;
   background-color: var(--blanco);
   padding: 5px;
@@ -261,7 +262,7 @@ margin: auto;
 
 .infoGrup3{
   position: absolute;
-  top: -66vh;
+  top: -64vh;
   left: 135vh;
   background-color: var(--blanco);
   padding: 5px;
@@ -270,21 +271,11 @@ margin: auto;
 
 .infoGrup4{
   position: absolute;
-  top: -60vh;
+  top: -57vh;
   left: 135vh;
   background-color: var(--blanco);
   padding: 5px;
   border-radius: 20px;
-}
-
-.infoGrup5{
-  position: absolute;
-  top: -54vh;
-  left: 135vh;
-  background-color: var(--blanco);
-  padding: 5px;
-  border-radius: 20px;
-  z-index: 2;
 }
 
 .inactive{
@@ -302,13 +293,13 @@ margin: auto;
 
 
     
-.contCilinSub{
+.contCapHusillo{
   position: relative;
 
 }
 
 
-.cilindSub{
+.capHusilloo{
 position: absolute;
 display: grid;
 grid-template-columns: repeat(2,1fr);
@@ -327,7 +318,7 @@ right: 0;bottom: 0;
 margin: auto;
 }
 
-.imgcilindSub{
+.imgcapHusilloo{
   width: 200px;
   display: grid;
   grid-row-end:4 ;
@@ -336,7 +327,7 @@ margin: auto;
   margin-left: 25px;
   border-radius: 40px;
 }
-.cilindSubnfo{
+.capHusilloonfo{
   display: grid;
   grid-row-end:4 ;
   grid-row-start:2 ;
@@ -357,7 +348,7 @@ margin: auto;
   cursor: pointer;
 }
 
-.cilindSub1,.cilindSub2,.cilindSub3,.cilindSub4,.cilindSub5{
+.capHusilloo1,.capHusilloo2,.capHusilloo3,.capHusilloo4,.capHusilloo5{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -367,18 +358,18 @@ margin: auto;
   margin: 0;
 }
 
-.infoCilin1{
+.infocapHusillo1{
   position: absolute;
-  top: -74vh;
+  top: -78vh;
   left: 135vh;
   background-color: var(--blanco);
   padding: 5px;
   border-radius: 20px;
 }
 
-.infoCilin2{
+.infocapHusillo2{
   position: absolute;
-  top: -60vh;
+  top: -71vh;
   left: 135vh;
   background-color: var(--blanco);
   padding: 5px;
@@ -386,16 +377,33 @@ margin: auto;
 }
 
 
+.infocapHusillo3{
+    position: absolute;
+    top: -64vh;
+    left: 135vh;
+    background-color: var(--blanco);
+    padding: 5px;
+    border-radius: 20px;
+  }
+  
+  .infocapHusillo4{
+    position: absolute;
+    top: -57vh;
+    left: 135vh;
+    background-color: var(--blanco);
+    padding: 5px;
+    border-radius: 20px;
+  }
 /* /////////////////////////////////////////////// */
 
 
-.ContCilinPrinc{
+.ContEjes{
   position: relative;
 
 }
 
 
-.cilinPrinc{
+.ejess{
 position: absolute;
 display: grid;
 grid-template-columns: repeat(2,1fr);
@@ -414,7 +422,7 @@ right: 0;bottom: 0;
 margin: auto;
 }
 
-.imgcilinPrinc{
+.imgejess{
   width: 300px;
   display: grid;
   grid-row-end:4 ;
@@ -423,7 +431,7 @@ margin: auto;
   margin-left: 25px;
   border-radius: 40px;
 }
-.cilinPrincnfo{
+.ejessnfo{
   display: grid;
   grid-row-end:4 ;
   grid-row-start:2 ;
@@ -444,7 +452,7 @@ margin: auto;
   cursor: pointer;
 }
 
-.cilinPrinc1,.cilinPrinc2,.cilinPrinc3,.cilinPrinc4,.cilinPrinc5{
+.ejess1,.ejess2,.ejess3,.ejess4,.ejess5{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -454,34 +462,51 @@ margin: auto;
   margin: 0;
 }
 
-.infoCilinP1{
+.infoEjes1{
   position: absolute;
-  top: -74vh;
+  top: -77vh;
   left: 135vh;
   background-color: var(--blanco);
   padding: 5px;
   border-radius: 20px;
 }
 
-.infoCilinP2{
+.infoEjes2{
   position: absolute;
-  top: -60vh;
+  top: -70vh;
   left: 135vh;
   background-color: var(--blanco);
   padding: 5px;
   border-radius: 20px;
 }
+.infoEjes3{
+    position: absolute;
+    top: -64vh;
+    left: 135vh;
+    background-color: var(--blanco);
+    padding: 5px;
+    border-radius: 20px;
+  }
+  
+  .infoEjes4{
+    position: absolute;
+    top: -57vh;
+    left: 135vh;
+    background-color: var(--blanco);
+    padding: 5px;
+    border-radius: 20px;
+  }
 
 /* 
 ///////////////////////////////////////////////////////// */
 
-.contTope{
+.contsistATC{
   position: relative;
 
 }
 
 
-.Topei{
+.sistATCi{
 position: absolute;
 display: grid;
 grid-template-columns: repeat(2,1fr);
@@ -500,7 +525,7 @@ right: 0;bottom: 0;
 margin: auto;
 }
 
-.imgTope{
+.imgsistATC{
   width: 300px;
   display: grid;
   grid-row-end:4 ;
@@ -509,7 +534,7 @@ margin: auto;
   padding: 15px;
   border-radius: 40px;
 }
-.TopeInfo{
+.sistATCInfo{
   display: grid;
   grid-row-end:4 ;
   grid-row-start:2 ;
@@ -530,7 +555,7 @@ margin: auto;
   cursor: pointer;
 }
 
-.Tope1,.Tope2,.Tope3,.Tope4,.Tope5{
+.sistATC1,.sistATC2,.sistATC3,.sistATC4,.sistATC5{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -540,62 +565,43 @@ margin: auto;
   margin: 0;
 }
 
-.infoTope1{
+.infosistATC1{
   position: absolute;
-  top: -78vh;
+  top: -76vh;
   left: 135vh;
   background-color: var(--blanco);
   padding: 5px;
   border-radius: 20px;
 }
 
-.infoTope2{
+.infosistATC2{
   position: absolute;
-  top: -71vh;
+  top: -67vh;
   left: 135vh;
   background-color: var(--blanco);
   padding: 5px;
   border-radius: 20px;
 }
 
-.infoTope3{
+.infosistATC3{
   position: absolute;
-  top: -64vh;
+  top: -58vh;
   left: 135vh;
   background-color: var(--blanco);
   padding: 5px;
   border-radius: 20px;
 }
 
-.infoTope4{
-  position: absolute;
-  top: -56vh;
-  left: 135vh;
-  background-color: var(--blanco);
-  padding: 5px;
-  border-radius: 20px;
-  z-index: 9;
-}
-
-.infoTope5{
-  position: absolute;
-  top: -54vh;
-  left: 135vh;
-  background-color: var(--blanco);
-  padding: 5px;
-  border-radius: 20px;
-  z-index: 2;
-}
 /* 
 /////////////////////////////////////////////////////// */
 
-.contArmElec{
+.contSistRef{
   position: relative;
 
 }
 
 
-.ArmElec{
+.sistemRef{
 position: absolute;
 display: grid;
 grid-template-columns: repeat(2,1fr);
@@ -614,7 +620,7 @@ right: 0;bottom: 0;
 margin: auto;
 }
 
-.imgArmElec{
+.imgsistemRef{
   width: 300px;
   display: grid;
   grid-row-end:4 ;
@@ -623,7 +629,7 @@ margin: auto;
   margin-left: 25px;
   border-radius: 40px;
 }
-.ArmElecnfo{
+.sistemRefnfo{
   display: grid;
   grid-row-end:4 ;
   grid-row-start:2 ;
@@ -644,7 +650,7 @@ margin: auto;
   cursor: pointer;
 }
 
-.ArmElec1,.ArmElec2,.ArmElec3,.ArmElec4,.ArmElec5{
+.sistemRef1,.sistemRef2,.sistemRef3,.sistemRef4,.sistemRef5{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -654,106 +660,210 @@ margin: auto;
   margin: 0;
 }
 
-.infoElec1{
+.infosistemRef1{
   position: absolute;
-  top: -67vh;
+  top: -75vh;
   left: 135vh;
   background-color: var(--blanco);
   padding: 5px;
   border-radius: 20px;
 }
 
-@media screen and (max-width: 1366px) {
+.infosistemRef2{
+    position: absolute;
+    top: -60vh;
+    left: 135vh;
+    background-color: var(--blanco);
+    padding: 5px;
+    border-radius: 20px;
+  }
 
-  .container{
-    grid-template-rows: 90vh;
+/* 
+////////////////////////////////////////////////////// */
     
-}
-  .grupoHi{
-    top: -110vh;
+.contSistLub{
+    position: relative;
+  
+  }
+  
+  
+  .sistLubr{
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 40px 180px 80px;
+  max-width: 600px;
+  min-width: 400px;
+  height: 350px;
+  background-color: var(--blanco);
+  z-index: 10;
+  /* top: -800px;
+  left: 25%; */
+  border-radius: 20px;
+  top: -130vh;
+  left: 0;
+  right: 0;bottom: 0;
+  margin: auto;
+  }
+  
+  .imgsistLubr{
+    width: 300px;
+    display: grid;
+    grid-row-end:4 ;
+    grid-row-start:2 ;
+    align-self: center;
+    margin-left: 25px;
+    border-radius: 40px;
+  }
+  .sistLubrnfo{
+    display: grid;
+    grid-row-end:4 ;
+    grid-row-start:2 ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: 15px;
+  }
+  
+  .close6{
+    display: grid;
+    grid-row-end:2 ;
+    grid-row-start:1 ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  
+  .sistLubr1,.sistLubr2,.sistLubr3,.sistLubr4,.sistLubr5{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .infoSec6 p{
+    margin: 0;
+  }
+  
+  .infosistLub1{
+    position: absolute;
+    top: -67vh;
+    left: 135vh;
+    background-color: var(--blanco);
+    padding: 5px;
+    border-radius: 20px;
   }
 
-  .infoGrup1{
-    top: -75vh;
-    left: 158vh;
-  }
-  .infoGrup2{
-    top: -66vh;
-    left: 158vh;
-  }
-  .infoGrup3{
-    top: -57vh;
-    left: 158vh;
-  }
-  .infoGrup4{
-    top: -48vh;
-    left: 158vh;
-  }
-  .infoGrup5{
-    top: -39vh;
-    left: 158vh;
-  }
+  @media screen and (max-width: 1366px) {
+    .motori{
+      top: -110vh;
+    }
 
-  .cilindSub{
-    top: -110vh;
+    .infoGrup1{
+      top: -74vh;
+      left: 158vh;
+    }
+    .infoGrup2{
+      top: -64vh;
+      left: 158vh;
+    }
+    .infoGrup3{
+      top: -53vh;
+      left: 158vh;
+    }
+    .infoGrup4{
+      top: -42vh;
+      left: 158vh;
+    }
+
+    .capHusilloo{
+      top: -110vh;
+    }
+
+    .infocapHusillo1{
+      top: -74vh;
+      left: 158vh;
+    }
+
+    .infocapHusillo2{
+      top: -64vh;
+      left: 158vh;
+    }
+    .infocapHusillo3{
+      top: -53vh;
+      left: 158vh;
+    }
+    .infocapHusillo4{
+      top: -42vh;
+      left: 158vh;
+    }
+
+    .ejess{
+      top: -110vh;
+    }
+
+    .infoEjes1{
+      top: -74vh;
+      left: 158vh;
+    }
+
+    .infoEjes2{
+      top: -64vh;
+      left: 158vh;
+    }
+    .infoEjes3{
+      top: -53vh;
+      left: 158vh;
+    }
+    .infoEjes4{
+      top: -42vh;
+      left: 158vh;
+    }
+
+    .sistATCi{
+      top: -110vh;
+    }
+
+    .infosistATC1{
+      top: -72vh;
+      left: 158vh;
+    }
+
+    .infosistATC2{
+      top: -58vh;
+      left: 158vh;
+    }
+
+    .infosistATC3{
+      top: -44vh;
+      left: 158vh;
+    }
+
+    .sistemRef{
+      top: -110vh;
+    }
+
+    .infosistemRef1{
+      top: -69vh;
+      left: 158vh;
+    }
+    .infosistemRef2{
+      top: -48vh;
+      left: 158vh;
+    }
+
+    .sistLubr{
+      top: -110vh;
+    }
+
+
+
+    
+
+    
+    
+
+
+
   }
-
-  .infoCilin1{
-    top: -69vh;
-    left: 158vh;
-  }
-  .infoCilin2{
-    top: -47vh;
-    left: 158vh;
-  }
-
-  .cilinPrinc{
-    top: -110vh;
-  }
-
-  .infoCilinP1{
-    top: -69vh;
-    left: 158vh;
-  }
-
-  .infoCilinP2{
-    top: -47vh;
-    left: 158vh;
-  }
-
-  .Topei{
-    top: -110vh;
-  }
-
-  .infoTope1{
-    top: -74vh;
-    left: 158vh;
-  }
-  .infoTope2{
-    top: -63vh;
-    left: 158vh;
-  }
-  .infoTope3{
-    top: -53vh;
-    left: 158vh;
-  }
-  .infoTope4{
-    top: -42vh;
-    left: 158vh;
-  }
-
-  .ArmElec{
-    top: -110vh;
-  }
-
-  .infoElec1{
-    top: -58vh;
-    left: 158vh;
-  }
-
-
-
-
-
-
-}
